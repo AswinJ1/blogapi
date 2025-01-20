@@ -10,6 +10,3 @@ pip install -r requirements.txt
 
 # Apply database migrations
 python manage.py migrate
-
-# Start the application with Gunicorn
-gunicorn backend.wsgi:application --bind 0.0.0.0:$PORT
