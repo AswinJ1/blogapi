@@ -24,7 +24,7 @@ SECRET_KEY = 'django-insecure-#)=g)guy0+s-0^5*f!@907l48%c9-6-_uk6u-q=v^_9f$-#gb#
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["blogapi-qm9m.onrender.com","127.0.0.1","localhost"]
 
 
 REST_FRAMEWORK = {
