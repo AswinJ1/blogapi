@@ -1,10 +1,16 @@
 #!/bin/bash
-set -o errexit  # Exit immediately if a command exits with a non-zero status
+
+# Exit on error
+set -o errexit
 
 # Install dependencies
-pip install -r requirements.txt  # Corrected the command to use '-r' instead of '-'
+pip install -r requirements.txt
 
+# Collect static files
+python manage.py collectstatic --no-input
 
-
-# Run database migrations
+# Apply database migrations
 python manage.py migrate
+
+# Start the application with Gunicorn
+gunicorn backend.wsgi:application --bind 0.0.0.0:$PORT
