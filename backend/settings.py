@@ -157,5 +157,5 @@ CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOWS_CREDENTIALS = True
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:5173',  # Your frontend URL
-    'https://nexus-trendsfront.vercel.app/'
+    'https://nexus-trendsfront.vercel.app'
 ]
